@@ -6,214 +6,166 @@
 <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
 <meta name="googlebot" content="noindex, nofollow">
 <meta name="description" content="Donor Profile Films 2026 for the Community Foundation of Middle Tennessee. Prepared by Laws of Ace Films.">
-<meta name="theme-color" content="#100F0D">
+<meta name="theme-color" content="#FBFBF9">
 <title>CFMT Donor Profiles</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
   :root {
-    --ground: #100F0D;
-    --raise:  #1A1815;
-    --line:   #2E2A25;
-    --ivory:  #F2EEE7;
-    --muted:  #A39C90;
-    --dim:    #6E675D;
-    --accent: #F47820;
-    --olive:  #9AA05F;
+    color-scheme: light;
+    --paper: #FBFBF9;
+    --ink:   #1B1B1A;
+    --ink-2: #55554F;
+    --ink-3: #8A8A82;
+    --rule:  #E3E3DE;
+    --rule-2:#CFCFC8;
+    --accent:#E8731F;
   }
   * { box-sizing: border-box; }
-
+  html { background: var(--paper); }
   body {
-    background: var(--ground);
-    color: var(--ivory);
-    font-family: "Archivo", system-ui, -apple-system, sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "IBM Plex Sans", system-ui, -apple-system, sans-serif;
     font-size: 16px;
-    line-height: 1.65;
+    line-height: 1.6;
     -webkit-font-smoothing: antialiased;
   }
-
-  .wrap { max-width: 50rem; margin: 0 auto; padding: 0 1.5rem; }
+  .wrap { max-width: 46rem; margin: 0 auto; padding: 0 1.5rem; }
 
   .eyebrow {
     font-family: "IBM Plex Mono", ui-monospace, monospace;
     font-size: .68rem;
-    letter-spacing: .2em;
+    letter-spacing: .18em;
     text-transform: uppercase;
     color: var(--accent);
   }
-  .eyebrow.q { color: var(--dim); }
+  .eyebrow.q { color: var(--ink-3); }
 
-  /* Hero */
-  header.hero { padding: 6rem 0 4.5rem; border-bottom: 1px solid var(--line); }
+  header.hero { padding: 5rem 0 3rem; border-bottom: 1px solid var(--ink); }
   header.hero h1 {
-    font-family: "Bodoni Moda", Didot, Georgia, serif;
+    font-family: "Newsreader", Georgia, serif;
     font-weight: 400;
-    font-size: clamp(2.7rem, 8vw, 4.6rem);
-    line-height: 1.02;
+    font-size: clamp(2.4rem, 6.5vw, 3.8rem);
+    line-height: 1.05;
     letter-spacing: -.015em;
-    margin: 1.4rem 0 0;
+    margin: 1.2rem 0 0;
     text-wrap: balance;
   }
-  header.hero h1 em { font-style: italic; color: var(--accent); }
   header.hero .thesis {
-    font-family: "Bodoni Moda", Georgia, serif;
-    font-size: clamp(1.1rem, 2.4vw, 1.4rem);
+    font-family: "Newsreader", Georgia, serif;
+    font-size: clamp(1.1rem, 2.2vw, 1.3rem);
     line-height: 1.5;
-    color: var(--muted);
-    max-width: 34rem;
-    margin: 1.8rem 0 0;
+    color: var(--ink-2);
+    max-width: 32rem;
+    margin: 1.5rem 0 0;
   }
   .facts {
-    display: flex; flex-wrap: wrap; gap: 2.5rem;
-    margin-top: 3rem; padding-top: 1.6rem;
-    border-top: 1px solid var(--line);
+    display: grid; grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem 2rem; margin-top: 2.6rem; padding-top: 1.4rem;
+    border-top: 1px solid var(--rule);
   }
-  .facts div { display: flex; flex-direction: column; gap: .35rem; }
-  .facts .v {
-    font-family: "IBM Plex Mono", monospace;
-    font-size: .95rem; color: var(--ivory);
-    font-variant-numeric: tabular-nums;
-  }
+  @media (min-width: 40rem) { .facts { grid-template-columns: repeat(4, 1fr); } }
+  .facts div { display: flex; flex-direction: column; gap: .3rem; }
+  .facts .v { font-size: .95rem; color: var(--ink); font-variant-numeric: tabular-nums; }
 
-  section { padding: 4.5rem 0; border-bottom: 1px solid var(--line); }
-  section > .eyebrow { display: block; margin-bottom: 1.1rem; }
+  section { padding: 3.6rem 0; border-bottom: 1px solid var(--rule); }
+  section > .eyebrow { display: block; margin-bottom: .9rem; }
   h2 {
-    font-family: "Bodoni Moda", Georgia, serif;
+    font-family: "Newsreader", Georgia, serif;
     font-weight: 400;
-    font-size: clamp(1.8rem, 4vw, 2.5rem);
-    line-height: 1.12;
+    font-size: clamp(1.6rem, 3.4vw, 2.1rem);
+    line-height: 1.18;
     letter-spacing: -.01em;
-    margin: 0 0 1.5rem;
+    margin: 0 0 1.2rem;
     text-wrap: balance;
   }
-  h3 {
-    font-family: "Archivo", sans-serif;
-    font-size: 1.02rem; font-weight: 600;
-    margin: 0 0 .4rem; letter-spacing: -.005em;
-  }
-  p { margin: 0 0 1.1rem; color: var(--muted); max-width: 40rem; }
+  h3 { font-size: 1rem; font-weight: 600; margin: 0; letter-spacing: -.005em; }
+  p { margin: 0 0 1rem; color: var(--ink-2); max-width: 38rem; }
   p:last-child { margin-bottom: 0; }
-  p.lead { color: var(--ivory); }
-  strong { color: var(--ivory); font-weight: 600; }
+  p.lead { color: var(--ink); }
+  strong { color: var(--ink); font-weight: 600; }
 
-  /* Payload cards */
-  .three { display: grid; grid-template-columns: 1fr; gap: 1px; background: var(--line); border: 1px solid var(--line); }
-  @media (min-width: 44rem) { .three { grid-template-columns: repeat(3, 1fr); } }
-  .three .cell { background: var(--ground); padding: 1.6rem 1.4rem; }
-  .three .n {
-    font-family: "IBM Plex Mono", monospace;
-    font-size: .7rem; color: var(--accent); letter-spacing: .1em;
-    display: block; margin-bottom: .9rem;
+  /* Ruled lists */
+  .list { border-top: 1px solid var(--rule-2); margin-top: 1.4rem; }
+  .row {
+    display: grid; gap: .3rem 1.5rem;
+    padding: 1rem 0; border-bottom: 1px solid var(--rule);
   }
-  .three p { font-size: .92rem; margin: 0; }
+  .row .k {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: .8rem; color: var(--ink-3);
+    font-variant-numeric: tabular-nums; padding-top: .15rem;
+  }
+  .row .k.on { color: var(--accent); }
+  .row .t { color: var(--ink); font-size: .97rem; }
+  .row .t span { display: block; color: var(--ink-2); font-size: .88rem; margin-top: .15rem; }
+  @media (min-width: 34rem) {
+    .row { grid-template-columns: 8rem 1fr; }
+    .row.tight { grid-template-columns: 1fr 6rem; }
+    .row.tight .k { text-align: right; padding-top: .2rem; }
+  }
+  .row.three .k { font-size: .74rem; letter-spacing: .1em; }
 
-  /* Deliverables */
-  .deliv { border-top: 1px solid var(--line); }
-  .drow {
-    display: grid; grid-template-columns: 1fr auto;
-    gap: 1rem; align-items: baseline;
-    padding: .95rem 0; border-bottom: 1px solid var(--line);
-  }
-  .drow .qty {
+  .row.sub .t .fund {
     font-family: "IBM Plex Mono", monospace;
-    font-size: .85rem; color: var(--dim);
-    font-variant-numeric: tabular-nums; white-space: nowrap;
+    font-size: .76rem; color: var(--ink-3); margin: .15rem 0 .5rem;
   }
-  .drow .what { color: var(--ivory); font-size: .96rem; }
-  .drow .what span { display: block; color: var(--dim); font-size: .84rem; margin-top: .15rem; }
-
-  /* Subjects */
-  .subs { display: flex; flex-direction: column; gap: 1px; background: var(--line); border: 1px solid var(--line); }
-  .sub { background: var(--ground); padding: 1.5rem 1.4rem; }
-  .sub .fund {
-    font-family: "IBM Plex Mono", monospace;
-    font-size: .74rem; color: var(--olive); margin: .1rem 0 .7rem;
-  }
-  .sub p { font-size: .92rem; margin: 0; }
-
-  /* Timeline */
-  .tl { border-top: 1px solid var(--line); }
-  .tl .row {
-    display: grid; grid-template-columns: 8.5rem 1fr;
-    gap: 1rem; padding: 1rem 0; border-bottom: 1px solid var(--line);
-  }
-  @media (max-width: 34rem) { .tl .row { grid-template-columns: 1fr; gap: .2rem; } }
-  .tl .d {
-    font-family: "IBM Plex Mono", monospace;
-    font-size: .82rem; color: var(--accent);
-    font-variant-numeric: tabular-nums; padding-top: .12rem;
-  }
-  .tl .e { color: var(--ivory); font-size: .96rem; }
-  .tl .e span { display: block; color: var(--dim); font-size: .84rem; margin-top: .15rem; }
+  .row.sub .t p { font-size: .92rem; margin: 0; }
 
   /* Investment */
-  .money { border: 1px solid var(--line); }
+  .money { border-top: 1px solid var(--ink); margin-top: 1.4rem; }
   .money .mrow {
     display: flex; justify-content: space-between; align-items: baseline;
-    gap: 1rem; padding: 1.1rem 1.5rem; border-bottom: 1px solid var(--line);
+    gap: 1rem; padding: .9rem 0; border-bottom: 1px solid var(--rule);
   }
-  .money .mrow span:first-child { color: var(--muted); font-size: .95rem; }
-  .money .mrow span:last-child {
-    font-family: "IBM Plex Mono", monospace; font-size: 1rem;
-    font-variant-numeric: tabular-nums; color: var(--ivory);
-  }
-  .money .total {
-    background: var(--raise); border-bottom: none;
-    padding-top: 1.4rem; padding-bottom: 1.4rem;
-  }
-  .money .total span:first-child {
-    color: var(--ivory); font-weight: 600; font-size: 1rem;
-  }
+  .money .mrow span:first-child { color: var(--ink-2); font-size: .95rem; }
+  .money .mrow span:last-child { font-size: .95rem; font-variant-numeric: tabular-nums; color: var(--ink); }
+  .money .total { border-bottom: 1px solid var(--ink); padding: 1.1rem 0; }
+  .money .total span:first-child { color: var(--ink); font-weight: 600; }
   .money .total span:last-child {
-    font-family: "Bodoni Moda", Georgia, serif;
-    font-size: 1.9rem; color: var(--accent);
+    font-family: "Newsreader", Georgia, serif;
+    font-size: 1.6rem; color: var(--ink);
   }
-  .terms { margin-top: 1.2rem; font-size: .88rem; color: var(--dim); }
+  .terms { margin-top: 1.2rem; font-size: .88rem; color: var(--ink-3); }
 
-  /* Actions */
-  .acts { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 1.8rem; }
+  .acts { display: flex; flex-wrap: wrap; gap: .7rem; margin-top: 1.6rem; }
   .btn {
     display: inline-block; text-decoration: none;
     font-family: "IBM Plex Mono", monospace;
-    font-size: .78rem; letter-spacing: .09em; text-transform: uppercase;
-    padding: .85rem 1.4rem; border: 1px solid var(--accent);
-    color: var(--accent); transition: background .18s, color .18s;
+    font-size: .76rem; letter-spacing: .08em; text-transform: uppercase;
+    padding: .8rem 1.2rem; border: 1px solid var(--ink);
+    color: var(--ink); transition: background .15s, color .15s;
   }
-  .btn:hover, .btn:focus-visible { background: var(--accent); color: var(--ground); }
-  .btn.ghost { border-color: var(--line); color: var(--muted); }
-  .btn.ghost:hover, .btn.ghost:focus-visible { background: var(--raise); color: var(--ivory); }
+  .btn:hover, .btn:focus-visible { background: var(--ink); color: var(--paper); }
+  .btn.ghost { border-color: var(--rule-2); color: var(--ink-2); }
+  .btn.ghost:hover, .btn.ghost:focus-visible { background: var(--ink); border-color: var(--ink); color: var(--paper); }
   a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 
-  .room { display: grid; grid-template-columns: 1fr; gap: 1.4rem; margin-top: 1.9rem; }
-  @media (min-width: 44rem) { .room { grid-template-columns: 1fr 1fr; } }
-  .room figure { margin: 0; display: flex; flex-direction: column; gap: .7rem; }
-  .room img {
-    display: block; width: 100%; height: auto;
-    border: 1px solid var(--line);
-    filter: saturate(.92) contrast(1.02);
-  }
-  .room figcaption {
-    font-family: "IBM Plex Mono", monospace;
-    font-size: .74rem; line-height: 1.6; color: var(--dim);
-  }
-  .room figcaption b { color: var(--muted); font-weight: 400; }
+  .room { display: grid; grid-template-columns: 1fr; gap: 1.2rem; margin-top: 1.6rem; }
+  @media (min-width: 40rem) { .room { grid-template-columns: 1fr 1fr; } }
+  .room figure { margin: 0; display: flex; flex-direction: column; gap: .6rem; }
+  .room img { display: block; width: 100%; height: auto; border: 1px solid var(--rule-2); }
+  .room figcaption { font-size: .84rem; line-height: 1.55; color: var(--ink-2); }
+  .room figcaption b { color: var(--ink); font-weight: 600; }
 
   footer {
-    padding: 3.5rem 0 5rem;
+    padding: 2.6rem 0 4rem;
     font-family: "IBM Plex Mono", monospace;
-    font-size: .76rem; color: var(--dim); line-height: 1.9;
+    font-size: .74rem; color: var(--ink-3); line-height: 1.9;
   }
-  footer .name { color: var(--ivory); letter-spacing: .12em; }
+  footer .name { color: var(--ink); letter-spacing: .1em; }
 
   @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 </style>
-<style>html,body{margin:0;padding:0}img{max-width:100%}[hidden]{display:none!important}</style>
+
+<style>html,body{margin:0;padding:0}img{max-width:100%}</style>
 </head>
 <body>
 <div class="wrap">
 
   <header class="hero">
-    <span class="eyebrow">Laws of Ace Films &nbsp;&middot;&nbsp; For the Community Foundation of Middle Tennessee</span>
-    <h1>Donor<br>Profile <em>Films</em></h1>
+    <span class="eyebrow">Laws of Ace Films &nbsp;&middot;&nbsp; Community Foundation of Middle Tennessee</span>
+    <h1>Donor Profile Films</h1>
     <p class="thesis">Six fundholders, six reasons to give, and one clear answer to the question a prospective donor is quietly asking: is this for someone like me?</p>
     <div class="facts">
       <div><span class="eyebrow q">Subjects</span><span class="v">6 fundholders</span></div>
@@ -228,42 +180,21 @@
     <h2>These are not portraits. They are the reason someone opens a fund.</h2>
     <p class="lead">Gamechangers celebrated people who had already done the work. This series has a different job. It sits in a donor email, in a gift officer's presentation, and on the website, in front of someone who has resources and has never thought of themselves as a philanthropist.</p>
     <p>So every film carries three things, in this order.</p>
-    <div class="three" style="margin-top:1.8rem">
-      <div class="cell">
-        <span class="n">01 / Motive</span>
-        <p>Why this person gives, told plainly enough that a viewer recognizes their own reason in it.</p>
-      </div>
-      <div class="cell">
-        <span class="n">02 / Mechanism</span>
-        <p>What opening a fund at CFMT actually made possible that would have been harder alone.</p>
-      </div>
-      <div class="cell">
-        <span class="n">03 / Invitation</span>
-        <p>A fundholder, not a foundation, saying the thing that gets someone off the fence.</p>
-      </div>
+    <div class="list">
+      <div class="row three"><div class="k on">01 &nbsp;Motive</div><div class="t">Why this person gives, told plainly enough that a viewer recognizes their own reason in it.</div></div>
+      <div class="row three"><div class="k on">02 &nbsp;Mechanism</div><div class="t">What opening a fund at CFMT actually made possible that would have been harder alone.</div></div>
+      <div class="row three"><div class="k on">03 &nbsp;Invitation</div><div class="t">A fundholder, not a foundation, saying the thing that gets someone off the fence.</div></div>
     </div>
   </section>
 
   <section>
     <span class="eyebrow">What you receive</span>
     <h2>Twelve finished pieces, built as two matched sets.</h2>
-    <div class="deliv">
-      <div class="drow">
-        <div class="what">Donor profile films<span>Two to three minutes. Full story, built for presentations and email.</span></div>
-        <div class="qty">6 &times;</div>
-      </div>
-      <div class="drow">
-        <div class="what">Social and website cuts<span>Thirty seconds. One strong quote, built as its own edit rather than a trim.</span></div>
-        <div class="qty">6 &times;</div>
-      </div>
-      <div class="drow">
-        <div class="what">Production days<span>Three-camera package, full lighting and audio, plus a pre-light and setup day.</span></div>
-        <div class="qty">2 shoots</div>
-      </div>
-      <div class="drow">
-        <div class="what">Post specification<span>Color, sound mix, titles and captions. One revision round per piece.</span></div>
-        <div class="qty">Included</div>
-      </div>
+    <div class="list">
+      <div class="row tight"><div class="t">Donor profile films<span>Two to three minutes. Full story, built for presentations and email.</span></div><div class="k">6 &times;</div></div>
+      <div class="row tight"><div class="t">Social and website cuts<span>Thirty seconds. One strong quote, built as its own edit rather than a trim.</span></div><div class="k">6 &times;</div></div>
+      <div class="row tight"><div class="t">Production days<span>Three-camera package, full lighting and audio, plus a pre-light and setup day.</span></div><div class="k">2 shoots</div></div>
+      <div class="row tight"><div class="t">Post<span>Color, sound mix, titles and captions. One revision round per piece.</span></div><div class="k">Included</div></div>
     </div>
   </section>
 
@@ -271,66 +202,56 @@
     <span class="eyebrow">Phase one</span>
     <h2>Three different doors into the same building.</h2>
     <p>The set only works if each fundholder answers <em>who is this for</em> differently. These three do.</p>
-    <div class="subs" style="margin-top:1.8rem">
-      <div class="sub">
-        <h3>Harry and Chandra Allen</h3>
-        <div class="fund">The Allen Family Beloved Community Fund</div>
-        <p>Giving built into family life, with three children involved from the start. For the donor thinking about what they pass on.</p>
-      </div>
-      <div class="sub">
-        <h3>Ernie Williams</h3>
-        <div class="fund">Jane W. Williams Fund</div>
-        <p>Carrying a mother's generosity forward, and choosing CFMT on reputation alone. For the donor who has just been entrusted with something.</p>
-      </div>
-      <div class="sub">
-        <h3>Missy Eason</h3>
-        <div class="fund">The Missy and Merideth Eason Fund</div>
-        <p>Decades with The Women's Fund and Girls Give, giving alongside women of every generation. For the donor who wants company, not just a transaction.</p>
-      </div>
+    <div class="list">
+      <div class="row sub"><div class="k">Sept 3, 9:30</div><div class="t"><h3>Harry and Chandra Allen</h3><div class="fund">The Allen Family Beloved Community Fund</div><p>Giving built into family life, with three children involved from the start. For the donor thinking about what they pass on.</p></div></div>
+      <div class="row sub"><div class="k">Sept 3, 11:00</div><div class="t"><h3>Ernie Williams</h3><div class="fund">Jane W. Williams Fund</div><p>Carrying a mother's generosity forward, and choosing CFMT on reputation alone. For the donor who has just been entrusted with something.</p></div></div>
+      <div class="row sub"><div class="k">Sept 3, 2:00</div><div class="t"><h3>Missy Eason</h3><div class="fund">The Missy and Merideth Eason Fund</div><p>Decades with The Women's Fund and Girls Give, giving alongside women of every generation. For the donor who wants company, not just a transaction.</p></div></div>
     </div>
   </section>
 
   <section>
     <span class="eyebrow">Approach</span>
     <h2>Clean, warm, and built to match across three months.</h2>
-    <p><strong>Look.</strong> Professional and buttoned up, deliberately not the Gamechangers treatment. One large soft key, controlled background, real separation. Quiet enough that the person is the only thing you notice.</p>
-    <p><strong>Consistency.</strong> The two shoots are eight weeks apart in different daylight. Every setup is lit so the key dominates and the room never becomes the source, which is what lets a September film and a December film sit side by side and look like one series.</p>
-    <p><strong>In the room.</strong> Three cameras on every subject, so each film has a full-frame conversation, a tight single, and reaction coverage without ever asking a donor to repeat themselves.</p>
+    <div class="list">
+      <div class="row"><div class="k">Look</div><div class="t">Professional and buttoned up, deliberately not the Gamechangers treatment. One large soft key, controlled background, real separation. Quiet enough that the person is the only thing you notice.</div></div>
+      <div class="row"><div class="k">Consistency</div><div class="t">The two shoots are eight weeks apart in different daylight. Every setup is lit so the key dominates and the room never becomes the source, which is what lets a September film and a December film sit side by side and look like one series.</div></div>
+      <div class="row"><div class="k">In the room</div><div class="t">Three cameras on every subject, so each film has a full-frame conversation, a tight single, and reaction coverage without ever asking a donor to repeat themselves.</div></div>
+    </div>
   </section>
 
   <section>
     <span class="eyebrow">The room</span>
     <h2>We have already walked the Truist Conference Room.</h2>
-    <p>One wall of glass, one wall of Nashville prints, and a table that will slide to one end so the setup has the depth it needs. The prints become the background. The glass becomes a controlled edge of light rather than a variable we are chasing all day.</p>
+    <p>One wall of glass, one wall of Nashville prints, and a conference table your fundholders will sit at. The table stays in the frame as a foreground plane, the prints become the background, and the glass becomes a controlled edge of light rather than a variable we are chasing all day.</p>
     <div class="room">
       <figure>
         <img src="room-print-wall.jpg" alt="Truist Conference Room looking toward the framed Nashville prints">
-        <figcaption><b>Looking at the print wall.</b> Neutral, on brand, and set perpendicular to the glass, which is what makes it controllable.</figcaption>
+        <figcaption><b>The print wall.</b> Neutral, on brand, and set perpendicular to the glass, which is what makes it controllable.</figcaption>
       </figure>
       <figure>
         <img src="room-window-wall.jpg" alt="Truist Conference Room looking down the window wall">
         <figcaption><b>The window wall.</b> Shades down, it becomes a soft panel behind the frame instead of a light source that changes by the hour.</figcaption>
       </figure>
     </div>
-    <p style="margin-top:1.6rem"><strong>The room is pre-lit and camera-ready the day before.</strong> When your first fundholder sits down at 9:30 on Thursday, nothing is still being built.</p>
+    <p style="margin-top:1.4rem"><strong>The room is pre-lit and camera-ready the day before.</strong> When your first fundholder sits down at 9:30 on Thursday, nothing is still being built.</p>
   </section>
 
   <section>
     <span class="eyebrow">Schedule</span>
     <h2>Dates</h2>
-    <div class="tl">
-      <div class="row"><div class="d">Sept 2</div><div class="e">Pre-light and setup<span>Truist Conference Room, from 2:00 PM</span></div></div>
-      <div class="row"><div class="d">Sept 3</div><div class="e">Phase one shoot<span>Allens 9:30, Ernie Williams 11:00, Missy Eason 2:00</span></div></div>
-      <div class="row"><div class="d">Oct 16</div><div class="e">Phase one delivery<span>Three films and three social cuts</span></div></div>
-      <div class="row"><div class="d">Late Oct</div><div class="e">Phase two shoot<span>Three fundholders, date to be confirmed</span></div></div>
-      <div class="row"><div class="d">Dec 15</div><div class="e">Phase two delivery<span>Three films and three social cuts, project complete</span></div></div>
+    <div class="list">
+      <div class="row"><div class="k on">Sept 2</div><div class="t">Pre-light and setup<span>Truist Conference Room, from 2:00 PM</span></div></div>
+      <div class="row"><div class="k on">Sept 3</div><div class="t">Phase one shoot<span>Allens 9:30, Ernie Williams 11:00, Missy Eason 2:00</span></div></div>
+      <div class="row"><div class="k on">Oct 16</div><div class="t">Phase one delivery<span>Three films and three social cuts</span></div></div>
+      <div class="row"><div class="k on">Late Oct</div><div class="t">Phase two shoot<span>Three fundholders, date to be confirmed</span></div></div>
+      <div class="row"><div class="k on">Dec 15</div><div class="t">Phase two delivery<span>Three films and three social cuts, project complete</span></div></div>
     </div>
   </section>
 
   <section>
     <span class="eyebrow">Investment</span>
     <h2>Twelve thousand, split evenly across the two phases.</h2>
-    <div class="money" style="margin-top:1.6rem">
+    <div class="money">
       <div class="mrow"><span>Phase one, production and post</span><span>$6,000.00</span></div>
       <div class="mrow"><span>Phase two, production and post</span><span>$6,000.00</span></div>
       <div class="mrow total"><span>Project total</span><span>$12,000.00</span></div>
